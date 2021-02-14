@@ -1,0 +1,427 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Gotham, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  padding: 30px 90px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  background: red;
+}
+
+nav input {
+  border: 0;
+  border-bottom: 0.1rem solid #000;
+  border-radius: 0;
+  line-height: 1.1;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-family: Gotham, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+nav aside {
+  width: 400px;
+  /* display: flex;
+        flex-direction: column; */
+  background-color: whitesmoke;
+  bottom: 0;
+  -webkit-box-shadow: -0.2rem 0 0.2rem rgba(0, 0, 0, 0.1);
+          box-shadow: -0.2rem 0 0.2rem rgba(0, 0, 0, 0.1);
+  position: fixed;
+  /* right: -100%; */
+  right: 0;
+  top: 0;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  z-index: 1500;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav main div {
+  padding: 0 30px;
+  text-align: center;
+}
+
+nav main div h3 {
+  font-size: 1em;
+}
+
+nav main div span {
+  font-size: 0.8em;
+}
+
+nav main .main-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+}
+
+nav main .main-div .aside-div-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav main .main-div .aside-div-item button {
+  background: black;
+  color: white;
+}
+
+nav div button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+nav div button:focus {
+  border: none;
+  outline: none;
+}
+
+.screen {
+  background-color: rgba(0, 0, 0, 0.65);
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+.screen .box-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+}
+
+.screen .box-item .close-container {
+  -ms-flex-item-align: start;
+      align-self: start;
+  height: 20%;
+  background-color: gray;
+  color: white;
+  position: fixed;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  right: 10%;
+  top: 5%;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  transition: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.screen .box-item .container-box-buy {
+  z-index: 10;
+  position: fixed;
+  background: white;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 1300px;
+  max-height: 600px;
+  margin: 0 auto;
+}
+
+.screen .box-item .container-box-buy figure {
+  border-bottom: 1px solid #d3d3d3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 30px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.screen .box-item .container-box-buy figure img {
+  width: 100%;
+  height: 100%;
+  max-width: 380px;
+  min-height: 480px;
+}
+
+.screen .box-item .container-box-buy .details-box {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  text-align: center;
+}
+
+.screen .box-item .container-box-buy .details-box .btn {
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.screen .box-item .container-box-buy .details-box .btn button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 1.2em;
+}
+
+.box-item .size .not-checked {
+  background-color: silver;
+  cursor: not-allowed;
+}
+
+.box-item .size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box-item .size div {
+  padding: 20px;
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+
+.box-item .size .checked {
+  background-color: white;
+  z-index: 4;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg {
+  background-color: gray;
+  background-color: rgba(0, 0, 0, 0.65);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  position: absolute !important;
+}
+
+.aside-div-item {
+  background-color: 'red' !important;
+  border: 1px solid red;
+}
+
+.aside-div-item img {
+  width: 40px;
+}
+
+.selected {
+  color: white;
+  background-color: black !important;
+}
+
+.cart-invisible {
+  right: -100% !important;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+/* Large devices (desktops, 992px and up) */
+.app {
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1300px;
+  background: red;
+  margin: 0 auto;
+}
+
+.app .article {
+  margin: 10px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: whitesmoke;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 263px;
+}
+
+.app .article img {
+  width: 100%;
+  height: 100%;
+  max-width: 263px;
+  min-height: 335px;
+}
+
+.app .article:hover .text h4 {
+  /* border-bottom: 1px solid black;*/
+  color: red;
+}
+
+.app .article .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.app .article .text h4 {
+  font-weight: 400;
+  margin: 1rem 0 0.6rem;
+}
+
+.app .article .text div span:nth-child(1) {
+  font-weight: bold;
+}
+
+.app .article .text div span:nth-child(2) {
+  color: gray;
+}
+
+nav aside {
+  /* display: flex;
+      flex-direction: column; */
+  background-color: whitesmoke;
+  bottom: 0;
+  -webkit-box-shadow: -0.2rem 0 0.2rem rgba(0, 0, 0, 0.1);
+          box-shadow: -0.2rem 0 0.2rem rgba(0, 0, 0, 0.1);
+  position: fixed;
+  /* right: -100%; */
+  right: 0;
+  top: 0;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  z-index: 1500;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav aside div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+nav aside header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0.1rem solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 1.5rem;
+  padding-right: 1rem;
+  position: relative;
+}
+
+nav aside button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+nav aside button:focus {
+  border: none;
+  outline: none;
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+/*# sourceMappingURL=main.css.map */

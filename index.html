@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <div>
+        <a href="index.html">inicio</a>
+      </div>
+      <div>
+        <label>Pesquisar: <input type="text" /></label>
+        <button title="open-cart"><i class="fas fa-search"></i></button>
+        <button class="btn-shopping" title="cart">
+          <i class="fas fa-shopping-bag"></i>
+        </button>
+      </div>
+      <aside class="cart-invisible">
+        <header>
+          <button class="closer-cart" title="close-cart">
+            <i class="far fa-times-circle"></i>
+          </button>
+          <h4 class="count-item"><span>Sacola (0)</span></h4>
+          <button title="Ajuda" type="button">
+            <i class="i-question-circle-o"></i>
+          </button>
+        </header>
+        <main>
+          <div class="main-div">
+            <h3 class="text-center">Sua sacola está vazia</h3>
+            <span>Navegue pelos nossos produtos e adicione no carrinho.</span>
+          </div>
+        </main>
+      </aside>
+    </nav>
+
+    <div class="app"></div>
+    <script src="./main.js"></script>
+    <!-- <script src="./getProducts.js"></script> -->
+    <script src="./js/getProduct.js"></script>
+  </body>
+</html>

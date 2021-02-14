@@ -1,0 +1,91 @@
+nav {
+  display: flex;
+  justify-self: center;
+  padding: 30px 90px;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  background: red;
+
+
+
+  input {
+    border: 0;
+    border-bottom: 0.1rem solid #000;
+    border-radius: 0;
+    line-height: 1.1;
+    outline: none;
+    transition: all 0.3s;
+    font-family: Gotham, Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+
+  aside {
+    width: 400px;
+    /* display: flex;
+        flex-direction: column; */
+    background-color: whitesmoke;
+    bottom: 0;
+    box-shadow: -0.2rem 0 0.2rem rgba(0, 0, 0, 0.1);
+    position: fixed;
+    /* right: -100%; */
+    right: 0;
+    top: 0;
+    transform: translateZ(0);
+    z-index: 1500;
+    transition: 0.3s;
+  }
+
+  main {
+
+    div {
+      padding: 0 30px;
+      text-align: center;
+
+      h3 {
+        font-size: 1em;
+      }
+
+      span {
+        font-size: 0.8em;
+      }
+    }
+
+    .main-div {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+
+
+      .aside-div-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+
+        button {
+          background: black;
+          color: white;
+        }
+      }
+
+    }
+
+  }
+
+}
+
+
+
+
+
+nav div button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+nav div button:focus {
+  border: none;
+  outline: none;
+}
